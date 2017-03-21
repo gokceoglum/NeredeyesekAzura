@@ -1,0 +1,43 @@
+﻿@model ContosoUniversity.Models.Statistic
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Statistic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RestaurantID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RestaurantID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DaysToGo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DaysToGo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DaysLeft)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DaysLeft)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

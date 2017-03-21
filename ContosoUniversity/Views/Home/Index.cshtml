@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Nerede Yesek?</h1>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>The Weather:</h2>
+        <p id="name"></p>
+        <p id="humidity"></p>
+        <p id="temp"></p>
+        <p id="description"></p>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+        <h2>Todays Restaurant:</h2>
+        <p></p>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {//Wait for all elements(DOM) to load before executing following function
+        $.get("@Url.Action("GetWeather","Home")", function (response) {
+            $("#name").text("City: " + response.name);
+            $("#humidity").text("Humidity: " + response.main.humidity+ " %");
+            $("#temp").text("Temperature: " + response.main.temp + " °C");
+            $("#description").text("Desription: " + response.weather[0].description);
+
+        });
+    });
+</script>

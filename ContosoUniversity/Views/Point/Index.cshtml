@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ContosoUniversity.Models.PointWriter>
+
+@{
+    ViewBag.Title = "Points";
+}
+
+<h2>Point List</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Create New Table</h2>
+        <input type="button" value="Create table" onclick="location.href='@Url.Action("createNewPointTable","Point")'" />
+    </div>
+
+    <div class="col-md-4">
+        <h2>Export as Excel File</h2>
+        <input type="button" value="Download" onclick="location.href='@Url.Action("exportExcel","Point")'" />
+    </div>
+
+    <div class="col-md-4">
+        <h2>Import Points</h2>
+        @using (Html.BeginForm("importExcel", "Point", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <table>
+                <tr>
+                    <td>File:</td>
+                    <td>
+                        <input type="file" name="UploadedFile" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="Submit" value="Upload" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            Person Name
+        </th>
+        <th>
+            Restaurant Name
+        </th>
+        <th>
+            Given Point
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RestaurantName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GivenPoint)
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "contact-form", action = "" }))
+{
+    <p>Name</p>
+    <input type="text" name="Name" /><br /><br />
+    <p>Email</p>
+    <input type="text" name="Email" /><br /><br />
+    <p>Subject</p>
+    <input type="text" name="Subject" /><br /><br />
+    <p>Message</p>
+    <input type="text" name="Message" /><br /><br />
+    <input type="submit" value="Gönder" class="btn btn-danger" />
+}
