@@ -1,4 +1,4 @@
-﻿using ContosoUniversity.Schedulers;
+using ContosoUniversity.Schedulers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +20,7 @@ namespace ContosoUniversity
             //Scheduler
             SchedulerContainer scheduler = new SchedulerContainer();
             scheduler.RunJob();
-        }
+        	DevExtremeBundleConfig.RegisterBundles(BundleTable.Bundles);
+		}
     }
 }

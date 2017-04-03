@@ -183,3 +183,5 @@ C:\Users\hdemi\Source\Repos\NeredeyesekAzura\ContosoUniversity\bin\Microsoft.Owi
 C:\Users\hdemi\Source\Repos\NeredeyesekAzura\ContosoUniversity\obj\Debug\ContosoUniversity.csprojResolveAssemblyReference.cache
 C:\Users\hdemi\Source\Repos\NeredeyesekAzura\ContosoUniversity\obj\Debug\ContosoUniversity.dll
 C:\Users\hdemi\Source\Repos\NeredeyesekAzura\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
+C:\Users\hdemi\Source\Repos\NeredeyesekAzura\ContosoUniversity\bin\DevExtreme.AspNet.Mvc.dll
+C:\Users\hdemi\Source\Repos\NeredeyesekAzura\ContosoUniversity\bin\DevExtreme.AspNet.Mvc.xml
