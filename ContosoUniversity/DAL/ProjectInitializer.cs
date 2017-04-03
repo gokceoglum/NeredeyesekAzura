@@ -7,7 +7,7 @@ using ContosoUniversity.Models;
 
 namespace ContosoUniversity.DAL
 {
-    public class ProjectInitializer : System.Data.Entity.DropCreateDatabaseAlways<ProjectContext>
+    public class ProjectInitializer : System.Data.Entity.CreateDatabaseIfNotExists<ProjectContext>
     {
         protected override void Seed(ProjectContext context)
         {
