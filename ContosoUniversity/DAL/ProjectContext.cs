@@ -21,6 +21,7 @@ namespace ContosoUniversity.DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            Database.CommandTimeout = 60;
         }
     }
 }
