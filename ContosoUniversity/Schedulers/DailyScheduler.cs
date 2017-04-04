@@ -42,14 +42,14 @@ namespace NeredeYesekNS.Schedulers
                 var last2Restaurant = db.Restaurants.Find(LastRestaurants.last2Id);
                 if (last2Restaurant == null && lastRestaurant != null)
                 {
-                    if (lastRestaurant.TransType == TransType.OnFoot && restaurant.TransType == TransType.ByCar)
+                    if (lastRestaurant.TransType == TransType.ByCar && restaurant.TransType == TransType.ByCar)
                     {
                         continue;
                     }
                 }
                 if (last2Restaurant != null && lastRestaurant != null)
                 {
-                    if ((lastRestaurant.TransType == TransType.OnFoot || last2Restaurant.TransType == TransType.OnFoot) && restaurant.TransType == TransType.OnFoot)
+                    if ((lastRestaurant.TransType == TransType.ByCar || last2Restaurant.TransType == TransType.ByCar) && restaurant.TransType == TransType.ByCar)
                     {
                         continue;
                     }
