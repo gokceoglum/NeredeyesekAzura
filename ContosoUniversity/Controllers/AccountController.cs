@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using ContosoUniversity.Models;
+using NeredeYesekNS.Models;
 
-namespace ContosoUniversity.Controllers
+namespace NeredeYesekNS.Controllers
 {
     [Authorize]
     public class AccountController : Controller

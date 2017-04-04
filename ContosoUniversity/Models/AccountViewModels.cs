@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace ContosoUniversity.Models
+namespace NeredeYesekNS.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

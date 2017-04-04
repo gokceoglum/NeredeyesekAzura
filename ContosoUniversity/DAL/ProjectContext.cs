@@ -1,8 +1,8 @@
-﻿using ContosoUniversity.Models;
+﻿using NeredeYesekNS.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace ContosoUniversity.DAL
+namespace NeredeYesekNS.DAL
 {
     public class ProjectContext : DbContext
 

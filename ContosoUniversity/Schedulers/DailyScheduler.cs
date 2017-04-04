@@ -1,12 +1,12 @@
-﻿using ContosoUniversity.Controllers;
-using ContosoUniversity.DAL;
-using ContosoUniversity.Models;
+﻿using NeredeYesekNS.Controllers;
+using NeredeYesekNS.DAL;
+using NeredeYesekNS.Models;
 using Quartz;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ContosoUniversity.Schedulers
+namespace NeredeYesekNS.Schedulers
 {
     public class DailyScheduler : IJob
     {

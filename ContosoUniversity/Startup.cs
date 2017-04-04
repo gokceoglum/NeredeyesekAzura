@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(ContosoUniversity.Startup))]
-namespace ContosoUniversity
+[assembly: OwinStartupAttribute(typeof(NeredeYesekNS.Startup))]
+namespace NeredeYesekNS
 {
     public partial class Startup
     {

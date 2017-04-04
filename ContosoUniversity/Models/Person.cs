@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ContosoUniversity.Models
+namespace NeredeYesekNS.Models
 {
     public class Person
     {

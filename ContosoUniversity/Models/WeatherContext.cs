@@ -6,7 +6,7 @@ using System.Net;
 using System.Web;
 using System.Web.Script.Serialization;
 
-namespace ContosoUniversity.Models
+namespace NeredeYesekNS.Models
 {
     public class WeatherContext
     {

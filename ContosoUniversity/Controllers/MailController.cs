@@ -1,4 +1,4 @@
-﻿using ContosoUniversity.Models;
+﻿using NeredeYesekNS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

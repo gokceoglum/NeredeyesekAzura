@@ -3,7 +3,7 @@ using Quartz.Impl;
 using System;
 
 
-namespace ContosoUniversity.Schedulers
+namespace NeredeYesekNS.Schedulers
 {
     public class SchedulerContainer
     {

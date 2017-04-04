@@ -1,10 +1,10 @@
-﻿using ContosoUniversity.DAL;
-using ContosoUniversity.Models;
+﻿using NeredeYesekNS.DAL;
+using NeredeYesekNS.Models;
 using Quartz;
 using System;
 using System.Linq;
 
-namespace ContosoUniversity.Schedulers
+namespace NeredeYesekNS.Schedulers
 {
     public class MonthlyScheduler : IJob
     {

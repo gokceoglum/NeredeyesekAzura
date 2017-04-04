@@ -6,13 +6,13 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using ContosoUniversity.DAL;
-using ContosoUniversity.Models;
+using NeredeYesekNS.DAL;
+using NeredeYesekNS.Models;
 using System.ComponentModel;
 using System.IO;
 using OfficeOpenXml;
 
-namespace ContosoUniversity.Controllers
+namespace NeredeYesekNS.Controllers
 {
     public class PointController : Controller
     {

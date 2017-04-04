@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using ContosoUniversity.Models;
+using NeredeYesekNS.Models;
 
-namespace ContosoUniversity
+namespace NeredeYesekNS
 {
     public partial class Startup
     {

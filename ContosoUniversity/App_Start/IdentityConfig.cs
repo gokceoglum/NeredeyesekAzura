@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using ContosoUniversity.Models;
+using NeredeYesekNS.Models;
 
-namespace ContosoUniversity
+namespace NeredeYesekNS
 {
     public class EmailService : IIdentityMessageService
     {
