@@ -7,7 +7,7 @@ using NeredeYesekNS.Models;
 
 namespace NeredeYesekNS.DAL
 {
-    public class ProjectInitializer : System.Data.Entity.DropCreateDatabaseAlways<ProjectContext>
+    public class ProjectInitializer : System.Data.Entity.CreateDatabaseIfNotExists<ProjectContext>
     {
         protected override void Seed(ProjectContext context)
         {
