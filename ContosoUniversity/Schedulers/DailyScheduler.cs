@@ -72,7 +72,7 @@ namespace ContosoUniversity.Schedulers
             Mail mail = new Mail();
             foreach (var person in db.Persons)
             {
-                //  mail.MailSender(recommendedRestaurant, person.Email);
+                mail.MailSender(toGoRestaurant.Name, person.Email);
             }
             updateTable(toGoRestaurant);
         }
